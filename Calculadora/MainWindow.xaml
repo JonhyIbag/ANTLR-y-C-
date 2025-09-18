@@ -5,8 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calculadora"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculadora Con ANLTR" Height="450" Width="800">
     <Grid>
-
+        <TextBox 
+            Name="TxtOperacion"
+            HorizontalAlignment="Left" 
+            Margin="50,0,0,0" 
+            TextWrapping="Wrap" 
+            Text="Ingrese su operación" 
+            VerticalAlignment="Center" 
+            Width="500"
+            MouseDoubleClick="EventTxtOperacion"
+        />
+        <Button
+            Name="BtnCalcular"
+            Content="Calcular"
+            Height="20"
+            Width="100"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Left"
+            Margin="580, 0, 0, 0"
+            Click="EventBtnCalcular"
+        />
+        <TextBlock
+            HorizontalAlignment="Left" 
+            Margin="50,253,0,0" 
+            TextWrapping="Wrap"
+            FontSize="24"
+            FontFamily="Arial Black"
+            Text="Resultado: " 
+            VerticalAlignment="Top"
+        />
+        <TextBlock
+            Name="TxtResultado"
+            HorizontalAlignment="Left" 
+            Margin="202,256,0,0" 
+            TextWrapping="Wrap"
+            FontSize="18"
+            FontFamily="Arial"
+            Text="Aun no se ha realizado ninguna operacion :(" 
+            VerticalAlignment="Top"
+        />
     </Grid>
 </Window>
